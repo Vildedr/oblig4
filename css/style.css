@@ -1,0 +1,135 @@
+
+html{
+    font-size: calc(1em + 1vw);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:rgba(105, 144, 103, 0.707);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "header" "main" "footer";
+}
+
+header, main, footer{
+    padding: 1rem;
+}
+
+header{
+    font-size: 1rem;
+    font-weight: 500;
+    grid-area: header;
+}
+
+header nav{
+    display: inline;
+    justify-content: space-between;
+    text-align: center;
+}
+
+header nav ul li{
+    display: inline;
+}
+
+/**Denne styrer alle linkene**/
+a{
+    text-decoration: none;
+    color: black;
+}
+
+/**Denne styrer listene i headeren**/
+header nav ul li{
+    list-style: none;
+}
+
+main h1{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.knapper{
+    background-color: rgb(183, 194, 194);
+    display: block;
+    text-align: center;
+    margin: 20px;
+}
+
+#search{
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.searchbar{
+    font-size: 1rem;
+}
+
+main h2{
+    padding: 30px 0 0 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+main section article{
+    text-align: center;
+}
+
+main section article figure img{
+    width: 100%;
+    text-align: center;
+    transform: scale(0.65);
+}
+
+main section article figure figcaption{
+    width: 100%;
+    text-align: center;
+    font-size: 1rem;
+}
+
+.read-more-btn{
+    background-color: rgb(183, 194, 194);
+    padding: 10px;
+}
+
+main section article h3{
+    margin-top: 0;
+}
+
+footer nav ul{
+    text-align: center;
+}
+
+footer nav ul li{
+    display: inline;
+    font-size: 1rem;
+    padding: 0 20px 0 20px;
+}
+
+footer h4{
+    font-size: 0.5rem;
+    text-align: center;
+}
+
+#produkt{
+    text-align: center;
+}
+
+/**Hamburger meny**/
+.navbar{
+    display: none;
+}
+
+.responsive{
+    display: block;
+}
+
+@media only screen and (min-width:400px){
+
+}

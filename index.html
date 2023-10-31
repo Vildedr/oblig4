@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1,0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css"> 
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Forside</title>
+    </head>
+    <body>
+        <div id="grid-container">
+        <header>
+            <nav>
+                <ul>
+                    <li><a id="ham" class="fa-solid fa-bars"></a></li>
+                    <li><a id="hjem" href="index.html" class="fa-solid fa-house-chimney"></a></li>
+                    <a id="logo" href="index.html">Skobutikken</a>
+                    <li><a id="handlekurv" href="#" class="fa-solid fa-cart-shopping"></a></li>
+                </ul>
+                <ul class="navbar">
+                    <li><a href="produkt.html">Herresko</a></li>
+                    <li><a href="produkt.html">Damesko</a></li>
+                    <li><a href="#">Tilbehør til sko</a></li>
+                    <li><a href="retur.html">Returnering</a></li>
+                    <li><a href="#">Om oss</a></li>
+                    <li><a href="#">Kontaktinformasjon</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <h1>Velkommen til skobutikken!</h1>
+            <section id="kategori">
+                <a href="produkt.html" class="knapper">Herresko</a>
+                <a href="produkt.html" class="knapper">Damesko</a>
+                <a href="#" class="knapper">Tilbehør til sko</a>
+            </section>
+              <section id="search">
+                <input class="searchbar" type="text" placeholder="Søk blant produkter...">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <i class="fa-solid fa-question"></i>
+            </section>
+            <section>
+                <article>
+                    <h2>Dette er høstens bestselgere!</h2>
+                    <figure>
+                        <img src="img/knyte.jpg" alt="bilde av brune tursko">
+                        <figcaption>
+                            <p>Bildet er tatt av <a href="https://pixabay.com/no/users/hans-2/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3082">Hans</a> fra <a href="https://pixabay.com/no//?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=3082">Pixabay</a></p>
+                        </figcaption>
+                    </figure>
+                    <h3>Jotunheimen Tursko</h3>
+                    <p>Unisex</p>
+                    <p>699 kr</p>
+                    <a href="produkt.html" class="read-more-btn">Se på sko</a>
+                </article>
+            </section>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#">Om oss</a></li>
+                    <li><a href="#">Kontaktinformasjon</a></li>
+                    <li><a href="#">Sosialemedier</a></li>
+                </ul>
+            </nav>
+            <h4>Nettside laget av Vilde Dybli Raaden 2023</h4>
+        </footer>
+        </div>
+
+        <script>
+            let x = document.querySelector(".navbar")
+            document.getElementById("ham").addEventListener("click", (e) => {
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar"
+                }
+            })
+        </script>
+    </body>
+</html>
+
+<!--Kilder: w3school, webutvikling boka. https://fashionipsum.com/classic.html-->

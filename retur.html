@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1,0">
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="assets/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css"> 
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>Returnering</title>
+    </head>
+    <body>
+        <header>
+            <nav>
+                <ul>
+                    <li><a id="ham" class="fa-solid fa-bars"></a></li>
+                    <li><a id="hjem" href="index.html" class="fa-solid fa-house-chimney"></a></li>
+                    <a id="logo" href="index.html">Skobutikken</a>
+                    <li><a id="handlekurv" href="#" class="fa-solid fa-cart-shopping"></a></li>
+                </ul>
+                <ul class="navbar">
+                    <li><a href="produkt.html">Herresko</a></li>
+                    <li><a href="produkt.html">Damesko</a></li>
+                    <li><a href="#">Tilbehør til sko</a></li>
+                    <li><a href="retur.html">Returnering</a></li>
+                    <li><a href="#">Om oss</a></li>
+                    <li><a href="#">Kontaktinformasjon</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <div id="grid-container">
+            <article>
+                <h1>Returnering</h1>
+                <h3>Ønsker du å returnere en vare?</h3>
+                <p>Følg disse enkle stegene:</p>
+                <li>1. Pellentesque fringilla, purus at vehicula posuere, sapien nulla tempus tellus, eu condimentum tellus velit egestas enim.</li>
+                <li>2. Donec sapien ligula, finibus facilisis sapien tincidunt, dapibus faucibus mauris. Aliquam fermentum neque id velit congue varius quis eu risus. Suspendisse rutrum nisl in rhoncus auctor.</li>
+                <li>3. Aliquam erat volutpat. Nunc in massa sem. Quisque nec nunc turpis.</li>
+                <li>4. Curabitur dolor diam, finibus eget elit non, finibus faucibus turpis.</li>
+            </article>
+            <section>
+                <figure>
+                    <img src="https://placehold.co/400" alt="storyboard til punkt 1">
+                    <figcaption>
+                        <p>Bildet fra Placehold.co</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://placehold.co/400" alt="storyboard til punkt 2">
+                    <figcaption>
+                        <p>Bildet fra Placehold.co</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://placehold.co/400" alt="storyboard til punkt 3">
+                    <figcaption>
+                        <p>Bildet fra Placehold.co</p>
+                    </figcaption>
+                </figure>
+                <figure>
+                    <img src="https://placehold.co/400" alt="storyboard til punkt 4">
+                    <figcaption>
+                        <p>Bildet fra Placehold.co</p>
+                    </figcaption>
+                </figure>
+            </section>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#">Om oss</a></li>
+                    <li><a href="#">Kontaktinformasjon</a></li>
+                    <li><a href="#">Sosialemedier</a></li>
+                </ul>
+            </nav>
+            <h4>Nettside laget av Vilde Dybli Raaden 2023</h4>
+        </footer>
+    </div>
+        <script>
+            let x = document.querySelector(".navbar")
+            document.getElementById("ham").addEventListener("click", (e) => {
+                if (x.className === "navbar") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "navbar"
+                }
+            })
+        </script>
+    </body>
+</html>
