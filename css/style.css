@@ -22,6 +22,7 @@ header, main, footer{
     padding: 1rem;
 }
 
+/**HEADER**/
 header{
     font-size: 1rem;
     font-weight: 500;
@@ -38,10 +39,14 @@ header nav ul li{
     display: inline;
 }
 
-/**Denne styrer alle linkene**/
+/**Denne styrer linkene**/
 a{
     text-decoration: none;
     color: black;
+}
+
+header nav ul{
+    padding-left: 0;
 }
 
 /**Denne styrer listene i headeren**/
@@ -49,6 +54,14 @@ header nav ul li{
     list-style: none;
 }
 
+.navbar li{
+    display: block;
+    padding: 5px;
+    background-color: rgba(97, 122, 96, 0.707);
+}
+/**SLUTT**/
+
+/**HOVEDINNHOLD**/
 main h1{
     text-align: center;
     font-size: 1.5rem;
@@ -58,7 +71,11 @@ main h1{
     background-color: rgb(183, 194, 194);
     display: block;
     text-align: center;
+    padding: 10px;
     margin: 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    line-height: 25px;
 }
 
 #search{
@@ -77,6 +94,12 @@ main h2{
     font-size: 1rem;
 }
 
+/**produkt og retur html gjør bildene responsive**/
+main section figure img{
+    width: 100%;
+}
+
+/**PRODUKTANNONSEN**/
 main section article{
     text-align: center;
 }
@@ -84,44 +107,64 @@ main section article{
 main section article figure img{
     width: 100%;
     text-align: center;
-    transform: scale(0.65);
+    transform: scale(0.95);
 }
 
 main section article figure figcaption{
     width: 100%;
     text-align: center;
-    font-size: 1rem;
+    font-size: 4vw;
 }
 
 .read-more-btn{
     background-color: rgb(183, 194, 194);
     padding: 10px;
+    border-radius: 5px;
 }
 
 main section article h3{
     margin-top: 0;
 }
 
-footer nav ul{
+main article h3{
     text-align: center;
 }
 
+main article p{
+    text-align: center;
+}
+/**SLUTT**/
+
+/**FLEX FOOTER**/
+footer{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    background-color: rgba(97, 122, 96, 0.707);
+}
+
+footer nav ul{
+    text-align: center;
+    padding-left: 0;
+}
+
 footer nav ul li{
-    display: inline;
+    list-style-type: none;
     font-size: 1rem;
     padding: 0 20px 0 20px;
 }
 
 footer h4{
-    font-size: 0.5rem;
+    font-size: 4vw;
     text-align: center;
 }
+/**SLUTT**/
 
 #produkt{
     text-align: center;
 }
 
-/**Hamburger meny**/
+/**HAMBURGERMENY**/
 .navbar{
     display: none;
 }
@@ -129,7 +172,27 @@ footer h4{
 .responsive{
     display: block;
 }
+/**SLUTT**/
 
-@media only screen and (min-width:400px){
+/**DESKTOP**/
+@media only screen and (min-width:600px){
+
+    main section article figure figcaption p{
+        font-size: 0.7rem;
+    }
+
+    main section figure figcaption p{
+        font-size: 0.7rem;
+    }
+
+    footer h4{
+        font-size: 1rem;
+    }
 
 }
+/**SLUTT**/
+
+/**Kilder:
+    Webutvikling av Tom Heine Natt, Eva M. Hornnes, Jostein Nordengen
+    W3schools.com
+**/

@@ -8,12 +8,13 @@
         <title>Returnering</title>
     </head>
     <body>
+        <div id="grid-container">
         <header>
             <nav>
                 <ul>
                     <li><a id="ham" class="fa-solid fa-bars"></a></li>
                     <li><a id="hjem" href="index.html" class="fa-solid fa-house-chimney"></a></li>
-                    <a id="logo" href="index.html">Skobutikken</a>
+                    <li><a id="logo" href="index.html">Skobutikken</a></li>
                     <li><a id="handlekurv" href="#" class="fa-solid fa-cart-shopping"></a></li>
                 </ul>
                 <ul class="navbar">
@@ -27,15 +28,14 @@
             </nav>
         </header>
         <main>
-            <div id="grid-container">
             <article>
                 <h1>Returnering</h1>
                 <h3>Ønsker du å returnere en vare?</h3>
                 <p>Følg disse enkle stegene:</p>
-                <li>1. Pellentesque fringilla, purus at vehicula posuere, sapien nulla tempus tellus, eu condimentum tellus velit egestas enim.</li>
-                <li>2. Donec sapien ligula, finibus facilisis sapien tincidunt, dapibus faucibus mauris. Aliquam fermentum neque id velit congue varius quis eu risus. Suspendisse rutrum nisl in rhoncus auctor.</li>
-                <li>3. Aliquam erat volutpat. Nunc in massa sem. Quisque nec nunc turpis.</li>
-                <li>4. Curabitur dolor diam, finibus eget elit non, finibus faucibus turpis.</li>
+                <p>1. Pellentesque fringilla, purus at vehicula posuere, sapien nulla tempus tellus, eu condimentum tellus velit egestas enim.</p>
+                <p>2. Donec sapien ligula, finibus facilisis sapien tincidunt, dapibus faucibus mauris. Aliquam fermentum neque id velit congue varius quis eu risus. Suspendisse rutrum nisl in rhoncus auctor.</p>
+                <p>3. Aliquam erat volutpat. Nunc in massa sem. Quisque nec nunc turpis.</p>
+                <p>4. Curabitur dolor diam, finibus eget elit non, finibus faucibus turpis.</p>
             </article>
             <section>
                 <figure>
@@ -74,7 +74,8 @@
             </nav>
             <h4>Nettside laget av Vilde Dybli Raaden 2023</h4>
         </footer>
-    </div>
+        </div>
+        <!--Javascript for hamburgermenyen-->
         <script>
             let x = document.querySelector(".navbar")
             document.getElementById("ham").addEventListener("click", (e) => {
@@ -87,3 +88,8 @@
         </script>
     </body>
 </html>
+
+<!--Kilder:
+    Webutvikling av Tom Heine Natt, Eva M. Hornnes, Jostein Nordengen
+    W3schools.com
+-->
