@@ -135,6 +135,14 @@ main article p{
 }
 /**SLUTT**/
 
+/**CSS FOR ANALYSESIDEN**/
+
+.analyse{
+    font-size: 1rem;
+}
+
+/**SLUTT**/
+
 /**FLEX FOOTER**/
 footer{
     display: flex;
