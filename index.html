@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1,0">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
+        <meta name="description" content="Skobutikken er en nettbutikk som gjør det enkelt og trygt å handle sko på nett. Se vårt store utvalg av sko til hverdag og fest. God handel.">
         <link rel="stylesheet" href="assets/fontawesome-free-6.4.2-web/fontawesome-free-6.4.2-web/css/all.css"> 
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <title>Forside</title>
@@ -13,9 +14,9 @@
             <nav>
                 <ul>
                     <li><a id="ham" class="fa-solid fa-bars"></a></li>
-                    <li><a id="hjem" href="index.html" class="fa-solid fa-house-chimney"></a></li>
+                    <li><a id="hjem" aria-label="Hjem" href="index.html" class="fa-solid fa-house-chimney"></a></li>
                     <li><a id="logo" href="index.html">Skobutikken</a></li>
-                    <li><a id="handlekurv" href="#" class="fa-solid fa-cart-shopping"></a></li>
+                    <li><a id="handlekurv" aria-label="Handlekurv" href="#" class="fa-solid fa-cart-shopping"></a></li>
                 </ul>
                 <ul class="navbar">
                     <li><a href="produkt.html">Herresko</a></li>
@@ -36,7 +37,8 @@
                 <a href="#" class="knapper">Tilbehør til sko</a>
             </section>
             <section id="search">
-                <input class="searchbar" type="text" placeholder="Søk blant produkter...">
+                <label for="søk"></label>
+                <input class="searchbar" type="text" placeholder="Søk blant produkter..." id="søk">
                 <i class="fa-solid fa-magnifying-glass"></i>
                 <i class="fa-solid fa-question"></i>
             </section>
