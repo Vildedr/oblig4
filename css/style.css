@@ -138,6 +138,32 @@ main article h3{
 main article p{
     text-align: center;
 }
+
+#velg-farge{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#velg-størrelse{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+main section button{
+    padding: 10px;
+    font-size: 0.8rem;
+}
+
+main section label{
+    display: block;
+}
+
+main section button{
+    display: block;
+    margin-top: 10px;
+}
 /**SLUTT**/
 
 /**CSS FOR ANALYSESIDEN**/
@@ -154,6 +180,10 @@ table{
     border-collapse: collapse;
     width: 100%;
     font-size: 0.7rem;
+}
+
+.forbedringer{
+    border: 2px solid rgb(0, 0, 0);
 }
 
 /**SLUTT**/
