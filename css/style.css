@@ -37,23 +37,14 @@ header nav{
     text-align: center;
 }
 
-/**Denne styrer linkene**/
-a{
-    text-decoration: none;
-    color: black;
-
-}
-/**OBS Denne fucka hamburger menyen**/
 header nav ul{
     display: flex;
     width: 100%;
-    height: 100%;
     justify-content: space-between;
     align-items: stretch;
     padding-left: 0;
 }
 
-/**Denne styrer listene i headeren**/
 header nav ul li{
     display: inline;
     list-style: none;
@@ -66,8 +57,13 @@ header nav ul li a{
 
 .navbar li{
     display: block;
-    padding: 5px;
+    padding: 15px;
     background-color: rgba(97, 122, 96, 0.707);
+}
+
+a{
+    text-decoration: none;
+    color: black;
 }
 /**SLUTT**/
 
@@ -104,12 +100,11 @@ main h2{
     font-size: 1rem;
 }
 
-/**produkt og retur html gjør bildene responsive**/
+/**GJØR AT BILDENE SLUTTER Å PRESSE UT SIDENE**/
 main section figure img{
     width: 100%;
 }
 
-/**PRODUKTANNONSEN**/
 main section article{
     text-align: center;
 }
@@ -146,7 +141,6 @@ main article p{
 /**SLUTT**/
 
 /**CSS FOR ANALYSESIDEN**/
-
 .analyse{
     font-size: 1rem;
 }
@@ -164,7 +158,7 @@ table{
 
 /**SLUTT**/
 
-/**FLEX FOOTER**/
+/**FOOTER**/
 footer{
     display: flex;
     flex-direction: column;
