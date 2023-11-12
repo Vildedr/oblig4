@@ -180,6 +180,7 @@ main section button{
 /**CSS FOR ANALYSESIDEN**/
 .analyse{
     font-size: 1rem;
+    text-align: left;
 }
 
 table, th, td{
